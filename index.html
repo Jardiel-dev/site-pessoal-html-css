@@ -1,44 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 4 - CSS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Jardiel Lopes</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="titulo-principal">Meu site pessoal</h1>
-    </header>
 
-    <main>
+<header>
+  <h1 id="titulo-principal">Meu site pessoal</h1>
+  <button id="botao-tema" type="button">Modo Escuro 🌙</button>
+</header>
 
-        <section class="box">
-            <h2>Sobre mim</h2>
-            <p class="destaque">Meu nome é <strong>Jardiel Lopes de Oliveira Cordeiro</strong> e estou aprendendo <em>desenvolvimento web</em>
-            </p>
+<main>
 
-        </section>
+  <!-- LINHA SUPERIOR -->
+  <section class="linha-topo">
 
-        <section class="box">
-            <h2>Me encontre</h2>
-          <a href="https://github.com/seu-perfil" target="_blank" class="btn-github">Meu GitHub</a>
-               
+    <div class="box">
 
+       
+      <h2>Sobre mim</h2>
+
+     <img src="img/IMG_20250722_134253_192.webp" alt="Foto de Jardiel" class="foto-perfil">
         
 
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1v8b5504JAWXFMpP61X5wblGrkulr9bXDA&s" alt="Foto de perfil">
-        </section>
+      <p>
+  Me chamo <strong>Jardiel Lopes de Oliveira Cordeiro</strong>, tenho 25 anos e estou no penúltimo semestre da faculdade de <strong>Análise e Desenvolvimento de Sistemas</strong>. Atualmente estou focado em <em>desenvolvimento web</em>, estudando e praticando HTML, CSS e JavaScript.
+</p>
 
-          <section class="box">
-              <h2>Objetivo</h2>
-              <p>Conseguir minha <strong>primeira vaga</strong> como dev.</p>
-            </section>
-    </main>
+    </div>
 
-      <footer>
-        <p>© 2026 - Jardiel</p>
-      </footer>
+    <div class="box">
+  <h2>Contato</h2>
+
+  <p>
+    Você pode me encontrar ou entrar em contato pelos canais abaixo:
+  </p>
+
+  <div class="botoes-contato">
+    <a href="https://github.com/Jardiel-dev" target="_blank" class="btn-github">
+      GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/jardiel-lopes-de-oliveira-cordeiro-814a48184/" target="_blank" class="btn-linkedin">
+      LinkedIn
+    </a>
+
+    <a href="https://wa.me/75999629135" target="_blank" class="btn-whatsapp">
+      WhatsApp
+    </a>
+
+    <a href="https://mail.google.com/mail/?view=cm&to=cordeirodiel@gmail.com"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn-email">
+  Email
+</a>
+
+  </div>
+</div>
+
+
+
+    <div class="box">
+      <h2>Objetivo</h2>
+     <p>
+  Meu objetivo é conquistar minha <strong>primeira vaga como desenvolvedor júnior</strong>
+  e, com o tempo, evoluir meus conhecimentos para me tornar um <strong>desenvolvedor full stack</strong>,
+  buscando <strong>crescimento profissional</strong>, aprendizado contínuo e uma
+  <strong>melhor qualidade de vida, com estabilidade financeira</strong>.
+</p>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEO EM DESTAQUE -->
+  <section class="video-apresentacao">
+    <div class="box box-video">
+      <h2>Apresentação</h2>
+
+      <div class="video-container">
+        <!-- depois você troca o VIDEO_ID -->
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Vídeo de apresentação"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="box projetos">
+    <h2>Projetos</h2>
+
+    <div class="botoes-projetos">
+      <button data-projeto="restaurante">Sistema de Restaurante</button>
+      <button data-projeto="banco">Sistema Bancário</button>
+      <button data-projeto="cursos">Plataforma de Cursos</button>
+    </div>
+
+   <div class="descricao-projeto" id="descricao-projeto">
+  <p>Selecione um projeto acima para ver a descrição.</p>
+</div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 - Jardiel</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
