@@ -18,16 +18,20 @@ botaoTema.addEventListener('click', () => {
 const botoes = document.querySelectorAll('.botoes-projetos button');
 const descricao = document.getElementById('descricao-projeto');
 
-// estado inicial (reload da página)
+// estado inicial
 descricao.innerHTML = `<p>Selecione um projeto acima para ver a descrição.</p>`;
 
 const projetos = {
   restaurante: {
-    titulo: "Sistema de Restaurante",
-    texto: "Aplicação web simulando um restaurante com carrinho e pedidos.",
-    link: "#",
-    ativo: false
-  },
+  titulo: "Sistema de Restaurante",
+  texto: "Sistema web com carrinho de compras, controle de quantidade e total dinâmico.",
+  link: "https://jardiel-dev.github.io/RESTAURANTE/",
+  ativo: true
+},
+
+
+
+ 
   banco: {
     titulo: "Sistema Bancário",
     texto: "Sistema bancário com contas, transferências e extrato.",
@@ -39,8 +43,17 @@ const projetos = {
     texto: "Plataforma para cursos online com login e progresso.",
     link: "#",
     ativo: false
+  },
+ 
+  lazyLoading: {
+    titulo: "Lazy Loading",
+    texto: "Projeto demonstrando carregamento de imagens sob demanda.",
+    link: "https://jardiel-dev.github.io/5_LAZY_LOADING/",
+    ativo: true
   }
 };
+
+
 
 botoes.forEach(botao => {
   botao.addEventListener('click', () => {
