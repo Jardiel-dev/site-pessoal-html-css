@@ -4,7 +4,7 @@ Este é meu site pessoal desenvolvido como parte do meu processo de aprendizado 
 
 O objetivo do projeto é praticar estruturação, estilização e organização de um site simples, servindo também como **vitrine inicial do meu portfólio**.
 
-Link para ver: https://jardiel-dev.github.io/site-pessoal-html-css/
+Link para ver: https://jardiel-dev.github.io/personal-website/
 
 ---
 
